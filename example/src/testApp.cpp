@@ -1,12 +1,8 @@
 #include "testApp.h"
 
-char sz[] = "[Rd9?-2XaUP0QY[hO%9QTYQ`-W`QZhcccYQY[`b";
-
-
 //--------------------------------------------------------------
 void testApp::setup() {	 
-	for(int i=0; i<strlen(sz); i++) sz[i] += 20;
-	
+
 	// setup fluid stuff
 	fluidSolver.setup(100, 100);
     fluidSolver.enableRGB(true).setFadeSpeed(0.002).setDeltaT(0.5).setVisc(0.00015).setColorDiffusion(0);
@@ -131,8 +127,6 @@ void testApp::draw(){
 	if(drawParticles)
 		particleSystem.updateAndDraw(fluidSolver, ofGetWindowSize(), drawFluid);
 	
-	ofDrawBitmapString(sz, 50, 50);
-
 #ifdef USE_GUI 
 	gui.draw();
 #endif

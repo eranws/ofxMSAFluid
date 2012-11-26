@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7FD42DF7-442E-479A-BA76-D0022F99702A}</ProjectGuid>
+    <RootNamespace>emptyExample</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">obj\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">obj\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)_debug</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectName)</TargetName>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ExecutablePath)</ExecutablePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\libs\of_v0072_vs2010_release\addons\ofxXmlSettings\src;C:\libs\of_v0072_vs2010_release\addons\ofxXmlSettings\libs\C:\libs\of_v0072_vs2010_release\addons\ofxMSAInteractiveObject\src;C:\libs\of_v0072_vs2010_release\addons\ofxSimpleGuiToo\src\Controls;C:\libs\of_v0072_vs2010_release\addons\ofxSimpleGuiToo\src;..\..\..\addons\ofxMSAFluid\src;..\..\..\addons\ofxMSACore\src;..\..\..\addons\ofxOpenCv\libs;..\..\..\addons\ofxFaceTracker\src;..\..\..\addons\ofxFaceTracker\libs\FaceTracker\include;..\..\..\addons\ofxProfile;..\..\..\addons\ofxCv\src;..\..\..\addons\ofxCv\libs\ofxCv\include;..\..\..\addons\ofxOpenCv\libs\opencv;..\..\..\addons\ofxOpenCv\libs\opencv\include;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\calib3d;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\contrib;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\core;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\features2d;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\flann;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\highgui;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\imgproc;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\legacy;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\ml;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\objdetect;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\ts;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\video;..\..\..\addons\ofxOpenCv\libs\opencv\lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010;..\..\..\libs\openFrameworks;..\..\..\libs\openFrameworks\graphics;..\..\..\libs\openFrameworks\app;..\..\..\libs\openFrameworks\sound;..\..\..\libs\openFrameworks\utils;..\..\..\libs\openFrameworks\communication;..\..\..\libs\openFrameworks\video;..\..\..\libs\openFrameworks\math;..\..\..\libs\openFrameworks\types;..\..\..\libs\openFrameworks\events;..\..\..\libs\glut\include;..\..\..\libs\rtAudio\include;..\..\..\libs\quicktime\include;..\..\..\libs\freetype\include;..\..\..\libs\freetype\include\freetype2;..\..\..\libs\cairo\include\cairo;..\..\..\libs\freeImage\include;..\..\..\libs\fmodex\include;..\..\..\libs\videoInput\include;..\..\..\libs\glew\include\;..\..\..\libs\glu\include;..\..\..\libs\poco\include;..\..\..\addons;..\..\..\libs\openFrameworks\gl;..\..\..\libs\openFrameworks\3d;..\..\..\libs\tess2\include;..\..\..\addons\ofxOpenNI\include\nite2;..\..\..\addons\ofxOpenNI\include\openni2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;POCO_STATIC;CAIRO_WIN32_STATIC_BUILD;DISABLE_SOME_FLOATING_POINT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>nite2.lib;openframeworksLibDebug.lib;cairo-static.lib;pixman-1.lib;msimg32.lib;OpenGL32.lib;GLu32.lib;kernel32.lib;setupapi.lib;Vfw32.lib;comctl32.lib;glut32.lib;rtAudioD.lib;videoInput.lib;libfreetype.lib;FreeImage.lib;qtmlClient.lib;dsound.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;glew32s.lib;fmodex_vc.lib;glu32.lib;PocoFoundationmdd.lib;PocoNetmdd.lib;PocoUtilmdd.lib;PocoXMLmdd.lib;Ws2_32.lib;tess2.lib;OpenNI2.lib;opencv_calib3d231d.lib;opencv_contrib231d.lib;opencv_core231d.lib;opencv_features2d231d.lib;opencv_flann231d.lib;opencv_gpu231d.lib;opencv_haartraining_engined.lib;opencv_highgui231d.lib;opencv_imgproc231d.lib;opencv_legacy231d.lib;opencv_ml231d.lib;opencv_objdetect231d.lib;opencv_video231d.lib;zlibd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\addons\ofxMSAFluid\src;..\..\..\addons\ofxMSACore\src;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010;..\..\..\libs\glut\lib\vs2010;..\..\..\libs\rtAudio\lib\vs2010;..\..\..\libs\FreeImage\lib\vs2010;..\..\..\libs\freetype\lib\vs2010;..\..\..\libs\quicktime\lib\vs2010;..\..\..\libs\fmodex\lib\vs2010;..\..\..\libs\videoInput\lib\vs2010;..\..\..\libs\cairo\lib\vs2010;..\..\..\libs\glew\lib\vs2010;..\..\..\libs\glu\lib\vs2010;..\..\..\libs\Poco\lib\vs2010;..\..\..\libs\openFrameworksCompiled\lib\vs2010;..\..\..\libs\tess2\lib\vs2010;..\..\..\addons\ofxOpenNi\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>atlthunk.lib; LIBC.lib; LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName)_debugInfo.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Message>adding DLLs and creating data folder</Message>
+      <Command>xcopy /e /i /y "$(ProjectDir)..\..\..\export\vs2010\*.dll" "$(ProjectDir)bin"
+if not exist "$(ProjectDir)bin\data" mkdir  "$(ProjectDir)bin\data"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>C:\libs\of_v0072_vs2010_release\addons\ofxXmlSettings\libs;C:\libs\of_v0072_vs2010_release\addons\ofxXmlSettings\src;C:\libs\of_v0072_vs2010_release\addons\ofxMSAInteractiveObject\src;C:\libs\of_v0072_vs2010_release\addons\ofxSimpleGuiToo\src\Controls;C:\libs\of_v0072_vs2010_release\addons\ofxSimpleGuiToo\src;..\..\..\addons\ofxMSAFluid\src;..\..\..\addons\ofxMSACore\src;..\..\..\addons\ofxOpenCv\libs;..\..\..\addons\ofxFaceTracker\src;..\..\..\addons\ofxFaceTracker\libs\FaceTracker\include;..\..\..\addons\ofxProfile;..\..\..\addons\ofxCv\src;..\..\..\addons\ofxCv\libs\ofxCv\include;..\..\..\addons\ofxOpenCv\libs\opencv;..\..\..\addons\ofxOpenCv\libs\opencv\include;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\calib3d;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\contrib;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\core;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\features2d;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\flann;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\gpu;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\highgui;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\imgproc;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\legacy;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\ml;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\objdetect;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\ts;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv2\video;..\..\..\addons\ofxOpenCv\libs\opencv\lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010;..\..\..\libs\openFrameworks;..\..\..\libs\openFrameworks\graphics;..\..\..\libs\openFrameworks\app;..\..\..\libs\openFrameworks\sound;..\..\..\libs\openFrameworks\utils;..\..\..\libs\openFrameworks\communication;..\..\..\libs\openFrameworks\video;..\..\..\libs\openFrameworks\math;..\..\..\libs\openFrameworks\types;..\..\..\libs\openFrameworks\events;..\..\..\libs\glut\include;..\..\..\libs\rtAudio\include;..\..\..\libs\quicktime\include;..\..\..\libs\cairo\include\cairo;..\..\..\libs\freetype\include;..\..\..\libs\freetype\include\freetype2;..\..\..\libs\freeImage\include;..\..\..\libs\fmodex\include;..\..\..\libs\videoInput\include;..\..\..\libs\glew\include\;..\..\..\libs\glu\include;..\..\..\libs\poco\include;..\..\..\addons;..\..\..\libs\openFrameworks\gl;..\..\..\libs\openFrameworks\3d;..\..\..\libs\tess2\include;..\..\..\addons\ofxOpenNI\include\nite2;..\..\..\addons\ofxOpenNI\include\openni2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;POCO_STATIC;CAIRO_WIN32_STATIC_BUILD;DISABLE_SOME_FLOATING_POINT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>nite2.lib;openframeworksLib.lib;cairo-static.lib;pixman-1.lib;msimg32.lib;OpenGL32.lib;GLu32.lib;kernel32.lib;setupapi.lib;glut32.lib;rtAudio.lib;videoInput.lib;libfreetype.lib;FreeImage.lib;qtmlClient.lib;dsound.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;glew32s.lib;fmodex_vc.lib;glu32.lib;PocoFoundationmd.lib;PocoNetmd.lib;PocoUtilmd.lib;PocoXMLmd.lib;tess2.lib;OpenNI2.lib;opencv_calib3d231.lib;opencv_contrib231.lib;opencv_core231.lib;opencv_features2d231.lib;opencv_flann231.lib;opencv_gpu231.lib;opencv_haartraining_engine.lib;opencv_highgui231.lib;opencv_imgproc231.lib;opencv_legacy231.lib;opencv_ml231.lib;opencv_objdetect231.lib;opencv_video231.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010;..\..\..\libs\glut\lib\vs2010;..\..\..\libs\rtAudio\lib\vs2010;..\..\..\libs\FreeImage\lib\vs2010;..\..\..\libs\freetype\lib\vs2010;..\..\..\libs\quicktime\lib\vs2010;..\..\..\libs\fmodex\lib\vs2010;..\..\..\libs\videoInput\lib\vs2010;..\..\..\libs\cairo\lib\vs2010;..\..\..\libs\glew\lib\vs2010;..\..\..\libs\glu\lib\vs2010;..\..\..\libs\Poco\lib\vs2010;..\..\..\libs\openFrameworksCompiled\lib\vs2010;..\..\..\libs\tess2\lib\vs2010;..\..\..\addons\ofxOpenNi\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>atlthunk.lib; LIBC.lib; LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+    </Link>
+    <PostBuildEvent>
+      <Message>adding DLLs and creating data folder</Message>
+      <Command>xcopy /e /i /y "$(ProjectDir)\..\..\..\export\vs2010\*.dll" "$(ProjectDir)\bin"
+if not exist "$(ProjectDir)\bin\data" mkdir  "$(ProjectDir)\bin\data"
+
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\ofxMSACore\src\MSACoreGL.cpp" />
+    <ClCompile Include="..\..\ofxMSAInteractiveObject\src\ofxMSAInteractiveObject.cpp" />
+    <ClCompile Include="..\..\ofxProfile\src\ofxProfile.cpp" />
+    <ClCompile Include="..\..\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiButton.cpp" />
+    <ClCompile Include="..\..\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiColorPicker.cpp" />
+    <ClCompile Include="..\..\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiComboBox.cpp" />
+    <ClCompile Include="..\..\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiContent.cpp" />
+    <ClCompile Include="..\..\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiFPSCounter.cpp" />
+    <ClCompile Include="..\..\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiMovieSlider.cpp" />
+    <ClCompile Include="..\..\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiQuadWarp.cpp" />
+    <ClCompile Include="..\..\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiSlider2d.cpp" />
+    <ClCompile Include="..\..\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiTitle.cpp" />
+    <ClCompile Include="..\..\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiToggle.cpp" />
+    <ClCompile Include="..\..\ofxSimpleGuiToo\src\ofxSimpleGuiConfig.cpp" />
+    <ClCompile Include="..\..\ofxSimpleGuiToo\src\ofxSimpleGuiControl.cpp" />
+    <ClCompile Include="..\..\ofxSimpleGuiToo\src\ofxSimpleGuiPage.cpp" />
+    <ClCompile Include="..\..\ofxSimpleGuiToo\src\ofxSimpleGuiToo.cpp" />
+    <ClCompile Include="..\..\ofxSimpleGuiToo\src\ofxSimpleGuiValueControl.cpp" />
+    <ClCompile Include="..\..\ofxXmlSettings\src\ofxXmlSettings.cpp" />
+    <ClCompile Include="..\..\ofxXmlSettings\libs\tinyxml.cpp" />
+    <ClCompile Include="..\..\ofxXmlSettings\libs\tinyxmlerror.cpp" />
+    <ClCompile Include="..\..\ofxXmlSettings\libs\tinyxmlparser.cpp" />
+    <ClCompile Include="..\src\MSAFluidDrawerBase.cpp" />
+    <ClCompile Include="..\src\MSAFluidSolver.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Particle.cpp" />
+    <ClCompile Include="src\ParticleSystem.cpp" />
+    <ClCompile Include="src\testApp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\ofxMSACore\src\MSACore-Cinder.h" />
+    <ClInclude Include="..\..\ofxMSACore\src\MSACore-OF.h" />
+    <ClInclude Include="..\..\ofxMSACore\src\MSACore.h" />
+    <ClInclude Include="..\..\ofxMSACore\src\MSACoreCommon.h" />
+    <ClInclude Include="..\..\ofxMSACore\src\MSACoreGL.h" />
+    <ClInclude Include="..\..\ofxMSACore\src\MSACoreMath.h" />
+    <ClInclude Include="..\..\ofxMSAInteractiveObject\src\ofxMSAInteractiveObject.h" />
+    <ClInclude Include="..\..\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiButton.h" />
+    <ClInclude Include="..\..\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiColorPicker.h" />
+    <ClInclude Include="..\..\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiComboBox.h" />
+    <ClInclude Include="..\..\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiContent.h" />
+    <ClInclude Include="..\..\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiFPSCounter.h" />
+    <ClInclude Include="..\..\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiMovieSlider.h" />
+    <ClInclude Include="..\..\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiQuadWarp.h" />
+    <ClInclude Include="..\..\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiSlider2d.h" />
+    <ClInclude Include="..\..\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiSliderBase.h" />
+    <ClInclude Include="..\..\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiSliderFloat.h" />
+    <ClInclude Include="..\..\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiSliderInt.h" />
+    <ClInclude Include="..\..\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiTitle.h" />
+    <ClInclude Include="..\..\ofxSimpleGuiToo\src\Controls\ofxSimpleGuiToggle.h" />
+    <ClInclude Include="..\..\ofxSimpleGuiToo\src\ofxSimpleGuiConfig.h" />
+    <ClInclude Include="..\..\ofxSimpleGuiToo\src\ofxSimpleGuiControl.h" />
+    <ClInclude Include="..\..\ofxSimpleGuiToo\src\ofxSimpleGuiIncludes.h" />
+    <ClInclude Include="..\..\ofxSimpleGuiToo\src\ofxSimpleGuiPage.h" />
+    <ClInclude Include="..\..\ofxSimpleGuiToo\src\ofxSimpleGuiToo.h" />
+    <ClInclude Include="..\..\ofxSimpleGuiToo\src\ofxSimpleGuiValueControl.h" />
+    <ClInclude Include="..\..\ofxXmlSettings\src\ofxXmlSettings.h" />
+    <ClInclude Include="..\..\ofxXmlSettings\libs\tinyxml.h" />
+    <ClInclude Include="..\src\MSAFluid.h" />
+    <ClInclude Include="..\src\MSAFluidDrawerBase.h" />
+    <ClInclude Include="..\src\MSAFluidDrawerGl-Cinder.h" />
+    <ClInclude Include="..\src\MSAFluidDrawerGl-OF.h" />
+    <ClInclude Include="..\src\MSAFluidParticleUpdater.h" />
+    <ClInclude Include="..\src\MSAFluidSolver.h" />
+    <ClInclude Include="src\Particle.h" />
+    <ClInclude Include="src\ParticleSystem.h" />
+    <ClInclude Include="src\testApp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\libs\openFrameworksCompiled\project\vs2010\openframeworksLib.vcxproj">
+      <Project>{5837595d-aca9-485c-8e76-729040ce4b0b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
